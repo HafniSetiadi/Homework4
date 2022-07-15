@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout"
+    android:layout_rowWeight="2"
+    >
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama : "
+        android:layout_marginRight="50dp"
+        android:paddingRight="150dp"
+        />
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Umur :"
+        android:layout_toRightOf="@id/edit_name"
+        android:layout_marginLeft="-40dp"
+        android:paddingRight="130dp"
+        />
+    <Button
+        android:id="@+id/button_continue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_below="@id/edit_name"
+        />
+    <Button
+        android:id="@+id/button_continue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:layout_below="@id/button_continue1"/>
+
+
+</RelativeLayout>
