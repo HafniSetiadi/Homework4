@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.btnSubmit?.setOnClickListener {
-            binding?.tvHelloWorld?.text ="Yeay akhirnya bisa terkoneksi!!"
+            binding?.tvHelloWorld?.text ="Yeay akhirnya bisa juga terkoneksi!!"
         }
     }
 }
