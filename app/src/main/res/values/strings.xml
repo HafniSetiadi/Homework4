@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Homework4</string>
     <string name="text_submit">Submit</string>
+    <string name="text_gunting_human">Gunting</string>
+    <string name="text_gunting_computer">Gunting</string>
     <string name="text_yes">Yes</string>
     <string name="text_no">No</string>
 </resources>

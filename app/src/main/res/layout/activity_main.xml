@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
     <TextView
@@ -27,20 +26,39 @@
         android:layout_margin="8dp"
         android:text="@string/text_submit"/>
 
+    <Button
+        android:id="@+id/btnGuntingH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/text_gunting_human"/>
+
+    <Button
+        android:id="@+id/btnGuntingC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:text="@string/text_gunting_computer"/>
+
+
     <ImageView
         android:id="@+id/ivProfile"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@android:drawable/ic_menu_save" />
+        android:src="@drawable/icon"/>
 
     <RadioGroup
+        android:id="@+id/rgYesOrNot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
         <RadioButton
+            android:id="@+id/rbYes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_yes" />
         <RadioButton
+            android:id="@+id/rbNot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_no" />

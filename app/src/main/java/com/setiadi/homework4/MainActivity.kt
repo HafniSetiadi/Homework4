@@ -16,7 +16,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.btnSubmit?.setOnClickListener {
-            binding?.tvHelloWorld?.text ="Yeay akhirnya bisa juga terkoneksi!!"
+            binding?.tvHelloWorld?.text ="Yeay akhirnya bisa juga terkoneksi!!" }
+
+        binding?.btnGuntingH?.setOnClickListener {
+            binding?.tvHelloWorld?.text ="Anda Pilih Gunting" }
+
+        binding?.btnGuntingC?.setOnClickListener {
+            binding?.tvHelloWorld?.text ="Computer Pilih Gunting" }
+
+        binding?.rgYesOrNot?.setOnCheckedChangeListener { radioGroup, id ->
+            if (id == R.id.rbYes) {
+                binding?.tvHelloWorld?.text = "Yes Siap"
+            }else {
+                binding?.tvHelloWorld?.text = "No Siap Boss"
+            }
         }
+
     }
 }
